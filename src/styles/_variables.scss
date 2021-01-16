@@ -1,0 +1,23 @@
+//Typography
+$headings: mr-eaves-modern, sans-serif;
+$texts: roboto, sans-serif;
+
+$font-family-base: $text !default;
+$fontsize-base: 14px !default;
+
+//Colors
+$fontsize-h1: 5rem;
+$fontsize-h2: 2.5rem;
+$fontsize-h3: 2rem;
+$fontsize-h4: 1.5rem;
+$fontsize-h5: 1.2rem;
+$fontsize-h6: 1rem;
+$fontsize-p: $fontsize-base;
+$fontsize-span: $font-size-base !default;
+$fontsize-a: $font-size-base !default;
+$fontsize-blockquote: 1.2rem;
+$fontsize-button: 14px !default;
+$fontsize-label: 14px !default;
+$fontsize-input: 14px !default;
+$fontsize-placeholder: 12px !default;
+$fontsize-helper-line: 12px !default;
