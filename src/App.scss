@@ -1,6 +1,7 @@
 @import "./styles/index";
 .App {
   @include flex-col;
+  justify-content: space-between;
   text-align: center;
   overflow: hidden;
 
