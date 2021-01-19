@@ -1,0 +1,108 @@
+.fadeIn {
+  animation: fadeIn ease-in-out 2.8s;
+  -webkit-animation: fadeIn ease-in-out 2.8s;
+  -moz-animation: fadeIn ease-in-out 2.8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slideLeft {
+  animation: slideLeft 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -websit-animation: slideLeft 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+  }
+}
+
+@-moz-keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+}
+
+.slideRight {
+  animation: slideRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -websit-animation: slideRight 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+  }
+}
+
+// @-moz-keyframes slideRight {
+//   0% {
+//     transform: translateX(0);
+//     -moz-transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(40px);
+//     -moz-transform: translateX(40px);
+//   }
+// }
+
+// @-webkit-keyframes slideRight {
+//   0% {
+//     -webkit-transform: translateX(0);
+//     transform: translateX(0);
+//   }
+//   100% {
+//     -webkit-transform: translateX(40px);
+//     transform: translateX(40px);
+//   }
+// }
