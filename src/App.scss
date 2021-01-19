@@ -1,0 +1,8 @@
+@import "./styles/index";
+.App {
+  @include flex-col;
+  text-align: center;
+  overflow: hidden;
+
+  min-height: 100vh;
+}
