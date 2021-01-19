@@ -17,6 +17,7 @@ main {
   padding-bottom: 2.5rem;
 }
 
+// Reuseable stylings
 @mixin grid-2-rows {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -35,47 +36,17 @@ main {
   flex-flow: row wrap;
 }
 
-.fadeIn {
-  animation: fadeIn ease-in-out 3s;
-  -webkit-animation: fadeIn ease-in-out 3s;
-  -moz-animation: fadeIn ease-in-out 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+// General media queries
 @media (min-width: $max-m) {
   main {
     margin: 0 15rem;
   }
 }
+
 @media (min-width: $max-l) {
   main {
-    max-width: 1000px;
     margin: 0 15rem;
+    max-width: 1000px;
+    min-height: 75vh;
   }
 }

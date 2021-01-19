@@ -38,12 +38,14 @@
     box-shadow: inset 3px 3px 15px $inner-shadow-dark,
       inset -3px -3px 15px $inner-shadow-light;
 
-    :first-child {
+    &:first-child,
+    &span,
+    &div {
       filter: saturate(0%);
     }
 
-    :last-child {
-      color: grey;
+    &:last-child {
+      color: $secondary-light;
     }
   }
 }
