@@ -1,0 +1,49 @@
+@media print {
+  .btn {
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+
+.btn {
+  color: inherit;
+  background-color: $primary-light;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+
+  &.rounded {
+    border-radius: 8px;
+    padding: 13px;
+    margin: 10px;
+  }
+
+  &.label {
+    color: $primary-bold;
+    font-size: $fontsize-button;
+    text-transform: uppercase;
+  }
+
+  //Neumorphism shadows
+  &.default {
+    box-shadow: 3px 3px 15px $inner-shadow-dark,
+      -3px -3px 15px $inner-shadow-light;
+  }
+
+  &.pressed {
+    box-shadow: inset 3px 3px 15px $inner-shadow-dark,
+      inset -3px -3px 15px $inner-shadow-light;
+
+    :first-child {
+      filter: saturate(0%);
+    }
+
+    :last-child {
+      color: grey;
+    }
+  }
+}

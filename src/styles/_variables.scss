@@ -1,11 +1,17 @@
-//Typography
-$headings: mr-eaves-modern, sans-serif;
-$texts: roboto, sans-serif;
+// Media queries
+$max-xs: 575.98px;
+$max-s: 767.98px;
+$max-m: 991.98px;
+$max-ml: 1280px;
+$max-l: 1440px;
 
-$font-family-base: $text !default;
+//Typography
+$headings: mr-eaves-modern, sans-serif !default;
+$texts: roboto, sans-serif !default;
+
+$font-family-base: $texts !default;
 $fontsize-base: 14px !default;
 
-//Colors
 $fontsize-h1: 5rem;
 $fontsize-h2: 2.5rem;
 $fontsize-h3: 2rem;
@@ -13,11 +19,40 @@ $fontsize-h4: 1.5rem;
 $fontsize-h5: 1.2rem;
 $fontsize-h6: 1rem;
 $fontsize-p: $fontsize-base;
-$fontsize-span: $font-size-base !default;
-$fontsize-a: $font-size-base !default;
+$fontsize-span: $fontsize-base !default;
+$fontsize-a: $fontsize-base !default;
 $fontsize-blockquote: 1.2rem;
-$fontsize-button: 14px !default;
+$fontsize-button: 13px !default;
 $fontsize-label: 14px !default;
 $fontsize-input: 14px !default;
 $fontsize-placeholder: 12px !default;
 $fontsize-helper-line: 12px !default;
+
+$fontweight-light: 100;
+$fontweight-regular: 400;
+$fontweight-medium: 500;
+$fontweight-bold: 700;
+
+$lineheight-base: 1.6 !default;
+
+$lineheight-h1: 1.1;
+$lineheight-h2: 1.2;
+$lineheight-h3: 1.3;
+$lineheight-h4: 1.4;
+$lineheight-h5: 1.5;
+$lineheight-h6: 1.5;
+$lineheight-p: 1.6;
+$lineheight-a: 1.6;
+$lineheight-button: 1.6;
+$lineheight-label: 1.6;
+$lineheight-span: 1.6;
+$lineheight-blockquote: 1.5;
+$lineheight-code: 1.6;
+
+//Colors
+$primary-light: #ebe6df;
+$primary-bold: #e68e15;
+$secondary-light: #989898;
+$secondary-bold: #26282b;
+$inner-shadow-light: #ffffff;
+$inner-shadow-dark: #beb4a6;

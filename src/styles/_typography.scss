@@ -1,0 +1,98 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings;
+}
+
+p,
+span,
+a,
+button,
+li {
+  font-family: $texts;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+.display-1 {
+  font-family: $headings;
+  font-size: $fontsize-h1;
+  line-height: $lineheight-h1;
+  color: $primary-bold;
+}
+
+h2,
+.display-2 {
+  font-family: $headings;
+  font-size: $fontsize-h2;
+  line-height: $lineheight-h2;
+}
+
+h3,
+.display-3 {
+  font-family: $headings;
+  font-size: $fontsize-h3;
+  line-height: $lineheight-h3;
+}
+
+h4,
+.display-4 {
+  font-family: $headings;
+  font-size: $fontsize-h4;
+  line-height: $lineheight-h4;
+}
+
+h5,
+.display-5 {
+  font-family: $headings;
+  font-size: $fontsize-h5;
+  line-height: $lineheight-h5;
+}
+
+h6,
+.display-6 {
+  font-family: $headings;
+  font-size: $fontsize-h6;
+  line-height: $lineheight-h6;
+}
+
+p,
+li {
+  font-family: $texts;
+  font-size: $fontsize-p;
+  font-weight: $fontweight-regular;
+  color: $secondary-bold;
+  text-align: left;
+  line-height: $lineheight-p;
+}
+
+span {
+  font-family: $texts;
+  font-size: $fontsize-span;
+  font-weight: $fontweight-regular;
+}
+
+a {
+  font-size: $fontsize-a;
+  font-family: $texts;
+  font-weight: $fontweight-bold;
+  color: $secondary-bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-light;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  font-size: $fontsize-blockquote;
+}
