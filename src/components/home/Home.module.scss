@@ -1,0 +1,63 @@
+@import "../../styles/index";
+
+main.homePage {
+  user-select: none;
+
+  div {
+    align-self: center;
+    margin-top: -13vh;
+
+    div > svg {
+      width: 75%;
+      height: 100%;
+    }
+  }
+
+  h1 {
+    color: $primary-bold;
+    margin: 0rem 1.8rem 0rem 1.8rem;
+    padding-right: 5vw;
+    text-align: right;
+  }
+}
+
+@media (min-width: $max-s) {
+  main.homePage {
+    div {
+      div > svg {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: $max-m) {
+  main.homePage {
+    div {
+      div > svg {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    h1 {
+      // @include flex-row;
+      padding-left: 21vw;
+    }
+  }
+}
+
+@media (min-width: $max-l) {
+  main.homePage {
+    h1 {
+      margin: unset;
+      padding: unset;
+      position: relative;
+      left: 14rem;
+      text-align: left;
+    }
+    div {
+      margin-top: unset;
+    }
+  }
+}
