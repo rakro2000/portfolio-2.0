@@ -1,0 +1,24 @@
+@import "../../styles/index";
+
+footer {
+  position: sticky;
+  height: 2.5rem;
+  clear: both;
+  bottom: 0;
+  margin: 2rem 0 0 0;
+
+  & p {
+    color: $secondary-light;
+    text-align: center;
+  }
+}
+
+@media (min-width: $max-s) {
+  footer {
+    margin: unset;
+    p {
+      text-indent: 2rem;
+      float: left;
+    }
+  }
+}

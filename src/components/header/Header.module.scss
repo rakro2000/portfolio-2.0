@@ -1,0 +1,51 @@
+@import "../../styles/index";
+
+header {
+  margin: 0 2rem;
+  padding: 14px 10px;
+  height: 18vh;
+  user-select: none;
+
+  div.logoWrapper {
+    cursor: pointer;
+    div > svg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    // justify-content: space-around;
+
+    li {
+      list-style-type: none;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $max-s) {
+  header {
+    @include grid-2-cols;
+    grid-template-columns: 30% 70%;
+
+    div,
+    ul {
+      align-self: start;
+    }
+    div {
+      justify-self: start;
+    }
+
+    ul {
+      justify-self: end;
+    }
+  }
+}
