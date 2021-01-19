@@ -5,6 +5,7 @@ import menuItems from "../routes/menu-list.json";
 import { Link, useLocation } from "react-router-dom";
 
 function BurgerMenu() {
+  const location = useLocation();
   const bar1 = useRef(null);
   const bar2 = useRef(null);
   const bar3 = useRef(null);
@@ -13,18 +14,36 @@ function BurgerMenu() {
   const [open, setOpen] = useState(false);
   const toggleOpenMenu = () => {
     setOpen(!open);
+    animateBars();
   };
   const closeMenu = () => {
     setOpen(!open);
+    animateBars();
   };
 
-  const location = useLocation();
+  const animateBars = () => {
+    console.log(!open); //true
+    if (!open) {
+      //transform burgermenu icon
+      bar1.current.style.transform = "rotate(135deg) translate(5px, -6px)";
+      bar2.current.style.opacity = "0";
+      bar2.current.style.left = "-60px";
+      bar3.current.style.transform = "rotate(-135deg) translate(3px, 4px)";
+    } else {
+      //remove transformation
+      bar1.current.style.transform = "unset";
+      bar2.current.style.opacity = "unset";
+      bar2.current.style.left = "unset";
+      bar3.current.style.transform = "unset";
+    }
+  };
+
   // Wrapper component for all items
   const MenuList = ({ children, open }) => {
     const content = open && <>{children}</>;
     return content;
   };
-  console.log(open);
+
   return (
     <nav>
       <button
