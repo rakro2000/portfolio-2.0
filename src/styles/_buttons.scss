@@ -38,9 +38,9 @@
     box-shadow: inset 3px 3px 15px $inner-shadow-dark,
       inset -3px -3px 15px $inner-shadow-light;
 
-    &:first-child,
-    &span,
-    &div {
+    :first-child,
+    span,
+    div {
       filter: saturate(0%);
     }
 
