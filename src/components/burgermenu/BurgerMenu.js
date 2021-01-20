@@ -80,7 +80,8 @@ function BurgerMenu() {
                 <Link
                   to="/"
                   children="⌞Back to home"
-                  style={{ textTransform: "unset", fontStyle: "italic" }}
+                  className="secondary"
+                  style={{ textTransform: "unset" }}
                 />
               </li>
             ) : (
