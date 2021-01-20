@@ -15,6 +15,7 @@ body {
 main {
   align-self: center;
   padding-bottom: 2.5rem;
+  margin: 2.5rem 1.8rem;
 }
 
 // Reuseable stylings
@@ -37,9 +38,14 @@ main {
 }
 
 // General media queries
+@media (min-width: $max-s) {
+  main {
+    margin: 0 3rem;
+  }
+}
 @media (min-width: $max-m) {
   main {
-    margin: 0 15rem;
+    margin: 0 8rem;
   }
 }
 
@@ -47,6 +53,6 @@ main {
   main {
     margin: 0 15rem;
     max-width: 1000px;
-    min-height: 75vh;
+    min-height: 70vh;
   }
 }
