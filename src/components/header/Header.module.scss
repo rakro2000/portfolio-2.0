@@ -5,12 +5,15 @@ header {
   padding: 14px 10px;
   height: 18vh;
   user-select: none;
+  @include grid-2-cols;
+  grid-template-columns: 30% 70%;
 
   div.logoWrapper {
     cursor: pointer;
+
     div > svg {
-      width: 90px;
-      height: 90px;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -35,11 +38,13 @@ header {
   header {
     @include grid-2-cols;
     grid-template-columns: 30% 70%;
+    height: unset;
 
     div,
     ul {
       align-self: start;
     }
+
     div {
       justify-self: start;
     }
