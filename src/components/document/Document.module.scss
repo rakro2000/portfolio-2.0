@@ -1,0 +1,60 @@
+@import "../../styles/index";
+
+main.document {
+  @include flex-col;
+  align-items: center;
+
+  article.content {
+    text-align: left;
+    // margin: 0 5px;
+
+    h2:first-of-type {
+      color: $primary-bold;
+      margin: 1rem 0;
+    }
+
+    ul {
+      margin-left: 15px;
+    }
+  }
+
+  div:first-child {
+    text-align: center;
+  }
+
+  img {
+    width: 85%;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $max-s) {
+  main.document {
+    @include grid-2-cols;
+    grid-template-rows: 25px auto;
+    gap: 0rem;
+    align-items: start;
+
+    margin: 0 unset;
+
+    article.content {
+      h2:first-of-type {
+        margin: unset;
+      }
+    }
+
+    div {
+      grid-column: 1 / span 2;
+      grid-row: 1 / 3;
+      text-align: left;
+
+      :first-child {
+        text-align: left;
+      }
+    }
+
+    // img {
+    //   width: 100%;
+    // }
+  }
+}

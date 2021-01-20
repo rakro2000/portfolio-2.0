@@ -1,0 +1,17 @@
+@import "../../styles/index";
+
+.frame {
+  width: 250px;
+  align-self: end;
+  img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+  }
+}
+
+.projectName {
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0.8rem;
+  // align-self: end;
+}

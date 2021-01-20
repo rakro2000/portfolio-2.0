@@ -1,0 +1,56 @@
+@import "../../styles/index";
+
+main.contactPage {
+  @include flex-col;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+
+    li {
+      @include flex-row;
+
+      a.contactLinks {
+        appearance: none;
+        @include flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+
+        font-weight: $fontweight-regular;
+
+        .icon {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+section.colRight {
+  @include grid-2-rows;
+  gap: 2rem;
+  margin-top: 4vh;
+}
+
+section.colLeft {
+  @include flex-col;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.soMeList {
+  @include flex-row;
+}
+
+@media (min-width: $max-m) {
+  main.contactPage {
+    @include grid-2-cols;
+    place-items: center;
+    gap: 2rem;
+  }
+
+  section.colRight {
+    margin-top: unset;
+  }
+}

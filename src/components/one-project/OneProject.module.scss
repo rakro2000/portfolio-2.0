@@ -1,0 +1,44 @@
+@import "../../styles/index";
+
+.oneProjectPage {
+  @include flex-col;
+  justify-content: center;
+}
+ul.breadscrumb {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 2rem;
+
+  li {
+    display: inline;
+
+    a {
+      color: $primary-bold;
+    }
+
+    &:last-child {
+      a {
+        cursor: default;
+        color: $secondary-bold;
+      }
+    }
+  }
+
+  li + li::before {
+    content: "/\00a0";
+    font-weight: $fontweight-bold;
+    padding: 8px;
+    color: $secondary-light;
+  }
+}
+
+.paraStyling::before {
+  content: "\A";
+  white-space: pre;
+}
+@media (min-width: $max-s) {
+  .oneProjectPage {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}

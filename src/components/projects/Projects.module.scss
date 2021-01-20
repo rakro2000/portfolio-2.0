@@ -1,0 +1,32 @@
+@import "../../styles/index";
+
+main.projectsPage {
+  h1 {
+    text-align: center;
+  }
+}
+
+section.allProjectsWrapper {
+  @include flex-col;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+@media (min-width: $max-s) {
+  main.projectsPage {
+    h1 {
+      text-align: left;
+    }
+  }
+  section.allProjectsWrapper {
+    @include grid-2-cols;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: $max-m) {
+  section.allProjectsWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

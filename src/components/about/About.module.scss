@@ -1,0 +1,11 @@
+@import "../../styles/index";
+
+.blackWhite {
+  filter: grayscale(100%);
+}
+
+@media (min-width: $max-s) {
+  .aboutPage {
+    overflow-y: hidden;
+  }
+}
