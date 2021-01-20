@@ -9,7 +9,7 @@ import VoLogo from "../../assets/vo-logo-copy.svg";
 import BurgerMenu from "../burgermenu/BurgerMenu";
 
 function Header() {
-  const isBigScreen = useMediaQuery({ query: "(orientation: landscape)" });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 991.98px)" });
   const history = useHistory();
   const location = useLocation(); // to get current url in browser window
   console.log(isBigScreen);
@@ -33,6 +33,7 @@ function Header() {
       ) : (
         <div></div>
       )}
+
       {!isBigScreen && <BurgerMenu />}
       {isBigScreen && (
         <ul>
