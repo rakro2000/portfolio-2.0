@@ -43,8 +43,9 @@
     div {
       filter: saturate(0%);
     }
-
-    &:last-child {
+    
+    //for texts
+    :last-child {
       color: $secondary-light;
     }
   }
