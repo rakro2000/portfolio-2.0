@@ -22,7 +22,6 @@ function BurgerMenu() {
   };
 
   const animateBars = () => {
-    console.log(!open); //true
     if (!open) {
       //transform burgermenu icon
       bar1.current.style.transform = "rotate(135deg) translate(5px, -6px)";

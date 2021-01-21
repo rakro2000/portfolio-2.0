@@ -12,7 +12,7 @@ function Header() {
   const isBigScreen = useMediaQuery({ query: "(min-width: 991.98px)" });
   const history = useHistory();
   const location = useLocation(); // to get current url in browser window
-  console.log(isBigScreen);
+
   return (
     <header>
       {/* Show side logo on other pages, not on landing page */}
