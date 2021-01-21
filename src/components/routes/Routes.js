@@ -10,7 +10,7 @@ import Contact from "../contact/Contact";
 
 function Routes() {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <Switch>
         <Route exact path="/">
