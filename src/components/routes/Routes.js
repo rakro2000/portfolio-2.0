@@ -13,21 +13,11 @@ function Routes() {
     <Router basename="/">
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/project/:id">
-          <OneProject />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        <Route exact path="/" render={() => <Home />}></Route>
+        <Route path="/about" render={() => <About />}></Route>
+        <Route path="/projects" render={() => <Projects />}></Route>
+        <Route path="/project/:id" render={() => <OneProject />}></Route>
+        <Route path="/contact" render={() => <Contact />}></Route>
       </Switch>
       <Footer />
     </Router>
