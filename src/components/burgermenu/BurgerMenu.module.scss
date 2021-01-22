@@ -7,7 +7,7 @@ nav {
 
   button.bars {
     cursor: pointer;
-    align-self: end;
+    align-self: flex-end;
 
     display: grid;
     grid-template-rows: repeat(3, 0.5fr);
