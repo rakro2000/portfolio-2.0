@@ -45,7 +45,8 @@
         </g>
         <g transform="translate(452.493 107)">
             <g transform="matrix(1, 0, 0, 1, -428.49, -12)" filter="url(#e)"><text transform="translate(428 358)"
-                    fill="#e68e15" font-size="412" font-family="MrEavesModOT-Bold, Mr Eaves Mod OT" font-weight="700">
+                    fill="#e68e15" font-size="412" font-family="MrEavesModOT-Bold, Mr Eaves Mod OT, mr-eaves-modern"
+                    font-weight="700">
                     <tspan x="0" y="0">~</tspan>
                 </text></g>
             <g transform="matrix(1, 0, 0, 1, -428.49, -12)" filter="url(#g)"><text transform="translate(428 358)"
@@ -55,7 +56,7 @@
                 </text></g>
         </g><text transform="translate(328.029 701.349) rotate(-60)" fill="#e68e2d" font-size="32"
             font-family="MrEavesModOT-Bold, Mr Eaves Mod OT, mr-eaves-modern" font-weight="700">
-            <tspan x="0" y="0">Rachel </tspan>
+            <tspan x="0" y="0">Rachel</tspan>
         </text>
     </g>
 </svg>
